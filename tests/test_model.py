@@ -9,5 +9,5 @@ class TestModelTraining(unittest.TestCase):
         self.assertIsInstance(model, RandomForestClassifier)
         self.assertGreaterEqual(len(model.feature_importances_), 4)
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     unittest.main()
